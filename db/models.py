@@ -41,7 +41,6 @@ class Player(BaseModel):
 class Admin(BaseModel):
     id = AutoField(primary_key=True)
     admin_telegram_id = CharField(max_length=20, unique=True, null=False)
-    admin_player_profile = ForeignKeyField(model=Player, on_delete='CASCADE')
 
     def __str__(self):
         return '{} | {}'.format(self.admin_telegram_id, self.admin_player_profile)
@@ -107,3 +106,4 @@ if __name__ == '__main__':
     ]
 
     db.create_tables(table1)
+    Admin.create(admin_telegram_id='your_tg_id')
