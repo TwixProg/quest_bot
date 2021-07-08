@@ -7,3 +7,5 @@ I hope you will send requests how to improve this bot
 
 
 __check bot.py, config.py, db/models.py__
+
+_By Kiskis_
