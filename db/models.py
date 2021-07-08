@@ -106,4 +106,4 @@ if __name__ == '__main__':
     ]
 
     db.create_tables(table1)
-    Admin.create(admin_telegram_id='your_tg_id')
+    Admin.create(admin_telegram_id='your_tg_id') # Creating admin
